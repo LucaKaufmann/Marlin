@@ -475,10 +475,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Ender 3 Pro
-  #define DEFAULT_Kp 24.70
-  #define DEFAULT_Ki 2.07
-  #define DEFAULT_Kd 73.75
+  // Ender 3 Pro Hemera
+  #define DEFAULT_Kp 25.18
+  #define DEFAULT_Ki 1.95
+  #define DEFAULT_Kd 81.25
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
@@ -931,7 +931,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, -5, -2 }
+#define NOZZLE_TO_PROBE_OFFSET { -40, 0, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
@@ -1063,11 +1063,11 @@
 
 // The size of the print bed
 #define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define Y_BED_SIZE 223
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
-#define Y_MIN_POS 0
+#define Y_MIN_POS -12
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
